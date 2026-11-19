@@ -4,7 +4,6 @@
              x:Class="AISalesDashboard.DesktopUI"
              xmlns:local="clr-namespace:AISalesDashboard"
              xmlns:sfButton="clr-namespace:Syncfusion.Maui.Buttons;assembly=Syncfusion.Maui.Buttons"
-             xmlns:imageExtension="clr-namespace:SampleBrowser.Maui.Base.Converters;assembly=SampleBrowser.Maui.Base"
              xmlns:navigationdrawer="clr-namespace:Syncfusion.Maui.NavigationDrawer;assembly=Syncfusion.Maui.NavigationDrawer"
              xmlns:aiassistview="clr-namespace:Syncfusion.Maui.AIAssistView;assembly=Syncfusion.Maui.AIAssistView"
              x:DataType="local:SalesTrendsViewModel">
@@ -110,7 +109,7 @@
                             StrokeShape="{OnPlatform Default='RoundRectangle 40', MacCatalyst='RoundRectangle 50'}"
                             HeightRequest="{OnPlatform MacCatalyst=50, Default=40}"
                             WidthRequest="{OnPlatform MacCatalyst=50, Default=40}">
-                        <Image Source="{AppThemeBinding Light={imageExtension:SfImageResource aiicon.png}, Dark={imageExtension:SfImageResource ai_icon_dark_win.png}}"
+                        <Image Source="{AppThemeBinding Light=aiicon.png, Dark=ai_icon_dark_win.png}"
                                HeightRequest="{OnPlatform MacCatalyst=20, Default=15}"
                                WidthRequest="{OnPlatform MacCatalyst=20, Default=15}" />
                     </Border>
@@ -195,7 +194,7 @@
                            ImageSize="20"
                            HorizontalOptions="End"
                            ImageAlignment="Default"
-                           ImageSource="{AppThemeBinding Light={imageExtension:SfImageResource ai_icon.png}, Dark={imageExtension:SfImageResource aiicon.png}}"
+                           ImageSource="{AppThemeBinding Light=ai_icon.png, Dark=aiicon.png}"
                            HeightRequest="60"
                            Clicked="ClickToShowPopup_Clicked"
                            Margin="{OnPlatform Default='0,0,40,40', MacCatalyst='0,0,80,40'}" />

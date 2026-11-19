@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AISalesDashboard.AndroidUI"
              xmlns:local="clr-namespace:AISalesDashboard"
-             xmlns:imageExtension="clr-namespace:SampleBrowser.Maui.Base.Converters;assembly=SampleBrowser.Maui.Base"
              xmlns:tabView="clr-namespace:Syncfusion.Maui.TabView;assembly=Syncfusion.Maui.TabView"
              xmlns:sfButton="clr-namespace:Syncfusion.Maui.Buttons;assembly=Syncfusion.Maui.Buttons"
              xmlns:aiassistview="clr-namespace:Syncfusion.Maui.AIAssistView;assembly=Syncfusion.Maui.AIAssistView"
@@ -22,7 +21,7 @@
                 Padding="10" ColumnSpacing="20">
                     <sfButton:SfButton Text="&#xe70e;" TextColor="{AppThemeBinding Light={StaticResource SalesDemoAssistViewHeaderTextColor}, Dark={StaticResource SalesDemoAssistViewHeaderTextColorDark}}" FontFamily="MauiSampleFontIcon" FontSize="27" WidthRequest="70" HeightRequest="40" ShowIcon="True" Grid.Column="0" Clicked="SfButton_Clicked" Background="{AppThemeBinding Dark={StaticResource SalesDemoBackArrowButtonBackgroundDark}}" Margin="20,0,0,0"/>
                     <Border Background="{AppThemeBinding Light={StaticResource SalesDemoAssistViewIconBackground}, Dark={StaticResource SalesDemoAssistViewIconBackgroundDark}}" Stroke="{AppThemeBinding Light={StaticResource SalesDemoNavigationDrawerBackgroundColor}, Dark={StaticResource SalesDemoNavigationDrawerBackgroundColorDark}}" StrokeShape="RoundRectangle 45" Grid.Column="1" WidthRequest="50" HeightRequest="50">
-                        <Image Source="{AppThemeBinding Light={imageExtension:SfImageResource aiicon.png}, Dark={imageExtension:SfImageResource ai_icon_dark_win.png}}" WidthRequest="20" HeightRequest="20"/>
+                        <Image Source="{AppThemeBinding Light=aiicon.png, Dark=ai_icon_dark_win.png}" WidthRequest="20" HeightRequest="20"/>
                     </Border>
                     <VerticalStackLayout Grid.Column="2" VerticalOptions="Center">
                         <Label Text="Assistant" TextColor="{AppThemeBinding Light={StaticResource SalesDemoAssistViewHeaderTextColor}, Dark={StaticResource SalesDemoAssistViewHeaderTextColorDark}}"
@@ -73,7 +72,7 @@
         </ContentView>
 
         <sfButton:SfButton Grid.Row="1" Grid.Column="2" x:Name="clickToShowPopup" ShowIcon="True" Background="{AppThemeBinding Light={StaticResource SalesDemoTabViewBackgroundColor}, Dark={StaticResource SalesDemoTabViewBackgroundColorDark}}" WidthRequest="50" CornerRadius="50"
-            ImageSize="20" HorizontalOptions="End" ImageAlignment="Default" ImageSource="{AppThemeBinding Light={imageExtension:SfImageResource ai_icon.png}, Dark={imageExtension:SfImageResource aiicon.png}}" HeightRequest="50"
+            ImageSize="20" HorizontalOptions="End" ImageAlignment="Default" ImageSource="{AppThemeBinding Light=ai_icon.png, Dark=aiicon.png}" HeightRequest="50"
             Clicked="ClickToShowPopup_Clicked" Margin="0,0,20,100" IsVisible="True">
         </sfButton:SfButton>
   
